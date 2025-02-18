@@ -1,0 +1,78 @@
+/* index.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333
+}
+
+header {
+    background-color: #333;
+    color: white;
+    height: 150px;
+    /* 固定高度 */
+    display: flex;
+    /* 使用 Flexbox 布局 */
+    justify-content: center;
+    /* 水平居中 */
+    align-items: center;
+    /* 垂直居中 */
+    flex-direction: column;
+    /* 如果有多个子元素，垂直排列 */
+}
+
+nav {
+    background-color: #333;
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0 1em;
+    margin: 0 0.5em;
+}
+
+nav a:hover {
+    color: #4CAF50;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.post h2 {
+    color: #333;
+}
+
+.post p {
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.post-date {
+    color: #999;
+    font-size: 0.9em;
+}
