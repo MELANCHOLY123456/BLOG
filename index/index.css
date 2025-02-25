@@ -1,78 +1,184 @@
-/* index.css */
+/* 全局样式 */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
-    color: #333
+    color: #333;
+    transition: background 0.3s, color 0.3s;
 }
 
+/* 头部样式 */
 header {
     background-color: #333;
     color: white;
-    height: 150px;
-    /* 固定高度 */
-    display: flex;
-    /* 使用 Flexbox 布局 */
-    justify-content: center;
-    /* 水平居中 */
-    align-items: center;
-    /* 垂直居中 */
-    flex-direction: column;
-    /* 如果有多个子元素，垂直排列 */
+    padding: 20px;
+    text-align: center;
+    position: relative;
 }
 
-nav {
-    background-color: #333;
-    padding: 0.5em;
+/* 暗黑模式切换按钮 */
+.toggle-switch {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
     display: flex;
+    align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+
+.toggle-switch input {
+    display: none;
+}
+
+.toggle-switch .slider {
+    width: 40px;
+    height: 40px;
+    background: #ccc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.icon {
+    font-size: 18px;
+    transition: transform 0.3s;
+}
+
+/* 亮色模式 */
+input:checked + .slider {
+    background: #FFD700;
+}
+
+input:checked + .slider .icon {
+    content: "☀️";  /* 亮色模式显示太阳 */
+    transform: rotate(360deg);
+}
+
+/* 导航栏 */
+nav {
+    background-color: #444;
+    padding: 10px;
+    text-align: center;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    padding: 0 1em;
-    margin: 0 0.5em;
+    padding: 0 15px;
 }
 
-nav a:hover {
-    color: #4CAF50;
-}
-
+/* 文章列表 */
 .container {
     width: 80%;
+    max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: white;
+    background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
+/* 单个文章卡片 */
 .post {
+    background: white;
     margin-bottom: 20px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
-.post h2 {
-    color: #333;
-}
-
-.post p {
-    line-height: 1.6;
-}
-
-footer {
-    text-align: center;
-    padding: 1em 0;
-    background-color: #333;
-    color: white;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+.post:hover {
+    transform: translateY(-5px);
 }
 
 .post-date {
     color: #999;
     font-size: 0.9em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin: 10px 0;
+}
+
+/* 回到顶部按钮 */
+#back-to-top {
+    width: 50px;  /* 设置宽度 */
+    height: 50px; /* 设置高度，使其成为正圆 */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5); /* 让背景更柔和 */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.3s;
+
+    /* 使用 flexbox 让 svg 居中 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#back-to-top svg {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    top: 1px;  /* 适当调整，确保箭头居中 */
+}
+
+#back-to-top:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+/* 暗黑模式 */
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark-mode .container {
+    background: #333;
+}
+
+.dark-mode .post {
+    background: #444;
+}
+
+.dark-mode nav {
+    background: #222;
+}
+
+.dark-mode #back-to-top {
+    background: #555;
+}
+
+/* 暗黑模式下的切换按钮 */
+.dark-mode .toggle-switch .slider {
+    background: #666;
+}
+
+.dark-mode input:checked + .slider {
+    background: #FFD700;
+    color: black;
+}
+
+.footer {
+    text-align: center;   /* 居中对齐 */
+    margin-top: 50px;     /* 增加顶部间距 */
+    padding: 15px 0;      /* 增加上下内边距 */
+    font-size: 14px;
+    color: #666;         /* 颜色稍微淡一点 */
 }

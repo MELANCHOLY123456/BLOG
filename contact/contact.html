@@ -9,43 +9,48 @@
 </head>
 
 <body>
-    <header>
-        <h1>眸冷但骨不累的个人博客</h1>
-        <p>分享生活、学习和成长</p>
-    </header>
-    <nav>
-        <a href="../index/index.html">首页</a>
-        <a href="../about/about.html">关于作者</a>
-        <a href="./contact.html">联系作者</a>
-    </nav>
-    <div class="container">
-        <section class="contact">
-            <h2>联系我</h2>
-            <p>非常欢迎你的来信！如果你有任何问题、建议或想和我交流，可以通过以下方式联系我：</p>
-            <ul>
-                <li>邮箱：<a href="mailto:moulengdangubulei@gmail.com" rel="noopener noreferrer">your-email@example.com</a>
-                </li>
-                <li>社交媒体：
-                    <a href="https://twitter.com/your-twitter" target="_blank" rel="noopener noreferrer">Twitter</a> |
-                    <a href="https://weibo.com/your-weibo" target="_blank" rel="noopener noreferrer">微博</a>
-                </li>
-            </ul>
-            <p>也可以通过下面的表单给我留言：</p>
-            <form action="https://your-server.com/submit-form" method="post">
-                <label for="name">姓名：</label>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">邮箱：</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="message">留言：</label>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
-                <button type="submit">提交</button>
-            </form>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2025 眸冷但骨不累的个人博客 | 设计与开发：眸冷但骨不累</p>
-    </footer>
-    <script src="contact.js"></script>
+<header>
+    <h1>眸冷但骨不累的个人博客</h1>
+    <!-- Dark Mode Toggle -->
+    <label class="toggle-switch">
+        <input type="checkbox" id="dark-mode-toggle">
+        <span class="slider">
+                <span class="icon">🌙</span>
+            </span>
+    </label>
+</header>
+<nav>
+    <a href="../index/index.html">首页</a>
+    <a href="../about/about.html">关于作者</a>
+    <a href="./contact.html">联系作者</a>
+</nav>
+<div class="container">
+    <section class="contact">
+        <h2>联系我</h2>
+        <p>非常欢迎你的来信！如果你有任何问题、建议或想和我交流，可以通过以下方式联系我：</p>
+        <ul>
+            <li>邮箱：<a href="mailto:moulengdangubulei@gmail.com" rel="noopener noreferrer">your-email@example.com</a></li>
+            <li>社交媒体：
+                <a href="https://twitter.com/your-twitter" target="_blank" rel="noopener noreferrer">Twitter</a> |
+                <a href="https://weibo.com/your-weibo" target="_blank" rel="noopener noreferrer">微博</a>
+            </li>
+        </ul>
+        <p>也可以通过下面的表单给我留言：</p>
+        <form action="https://your-server.com/submit-form" method="post">
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">邮箱：</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">留言：</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button type="submit">提交</button>
+        </form>
+    </section>
+</div>
+<footer class="footer">
+    <p>&copy; 2025 眸冷但骨不累的个人博客 | 设计与开发：眸冷但骨不累</p>
+</footer>
+<script src="contact.js"></script>
 </body>
 
 </html>

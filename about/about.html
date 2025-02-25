@@ -1,34 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>关于作者 - 眸冷但骨不累的个人博客</title>
     <link rel="stylesheet" href="about.css">
 </head>
-
 <body>
-    <header>
-        <h1>关于作者</h1>
-    </header>
-    <nav>
-        <a href="../index/index.html">首页</a>
-        <a href="./about.html">关于作者</a>
-        <a href="../contact/contact.html">联系作者</a>
-    </nav>
-    <div class="container">
-        <section class="about">
-            <h2>关于我</h2>
-            <p>您好，我是眸冷但骨不累，一个热爱生活、热爱分享的个人博客作者。我在这个博客上记录我的生活点滴、学习心得以及对世界的观察和思考。</p>
-            <p>我热衷于探索新知识，无论是科技、艺术还是人文，我都充满好奇。我希望通过这个平台，与同样热爱探索的您分享我的发现和感悟。</p>
-            <p>如果您对我的分享感兴趣，或者有任何想要交流的想法，欢迎通过<a href="../contact/contact.html">联系作者</a>页面与我取得联系。</p>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2025 眸冷但骨不累的个人博客 | 设计与开发：眸冷但骨不累</p>
-    </footer>
-    <script src="about.js"></script>
+<header>
+    <h1>关于作者</h1>
+    <label class="toggle-switch">
+        <input type="checkbox" id="dark-mode-toggle">
+        <span class="slider">
+            <span class="icon">🌙</span>
+        </span>
+    </label>
+</header>
+<nav>
+    <a href="../index/index.html">首页</a>
+    <a href="./about.html">关于作者</a>
+    <a href="../contact/contact.html">联系作者</a>
+</nav>
+<div class="container">
+    <section class="about">
+        <h2>关于我</h2>
+        <p>您好，我是眸冷但骨不累，一个热爱生活、热爱分享的个人博客作者。</p>
+        <p>我热衷于探索新知识，无论是科技、艺术还是人文，我都充满好奇。</p>
+        <p>如果您对我的分享感兴趣，欢迎通过<a href="../contact/contact.html">联系作者</a>页面与我取得联系。</p>
+    </section>
+</div>
+<button id="back-to-top">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12 4L4 12H8V20H16V12H20L12 4Z" fill="white"/>
+    </svg>
+</button>
+<footer class="footer">
+    <p>&copy; 2025 眸冷但骨不累的个人博客 | 设计与开发：眸冷但骨不累</p>
+</footer>
+<script src="about.js"></script>
 </body>
-
 </html>
