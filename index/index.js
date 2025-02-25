@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { date: "Oct 01, 2024", title: "05. Machine Learning in Everyday Life", content: "Machine learning is no longer a futuristic concept. It's embedded in our daily lives, from recommendation systems to smart assistants. How does it work, and what's next?" },
         { date: "Sep 15, 2024", title: "06. Building Scalable Applications", content: "Scalability is key in modern software architecture. Learn about microservices, cloud computing, and design patterns that help applications handle millions of users." },
         { date: "Aug 10, 2024", title: "07. The Philosophy of Open Source", content: "Open source software has revolutionized the tech industry. But why do developers contribute for free? This article delves into the motivations and ethics behind open source." },
-        { date: "Jul 05, 2024", title: "08. The Digital Nomad Lifestyle", content: "More professionals are embracing remote work and digital nomadism. What are the pros and cons, and how can one succeed in this lifestyle?" }
+        { date: "Jul 05, 2024", title: "08. The Digital Nomad Lifestyle", content: "More professionals are embracing remote work and digital nomadic. What are the pros and cons, and how can one succeed in this lifestyle?" }
     ];
 
 

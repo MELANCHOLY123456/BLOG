@@ -97,7 +97,6 @@ nav a {
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    display: none;
     transition: all 0.3s;
     display: flex;
     align-items: center;

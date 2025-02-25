@@ -46,6 +46,7 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+/* 初始图标样式 */
 .icon {
     font-size: 18px;
     transition: transform 0.3s;
@@ -53,11 +54,29 @@ header {
 
 /* 亮色模式 */
 input:checked + .slider {
-    background: #FFD700;
+    background: #FFD700; /* 黄色背景 */
 }
 
 input:checked + .slider .icon {
     content: "☀️";  /* 亮色模式显示太阳 */
+    transform: rotate(360deg);
+}
+
+/* 暗黑模式 */
+.dark-mode .toggle-switch .slider {
+    background: #666; /* 暗色背景 */
+}
+
+.dark-mode .icon {
+    color: #fff; /* 图标颜色为白色 */
+}
+
+.dark-mode input:checked + .slider {
+    background: #FFD700; /* 亮色背景 */
+}
+
+.dark-mode input:checked + .slider .icon {
+    content: "☀️"; /* 亮色模式显示太阳 */
     transform: rotate(360deg);
 }
 
@@ -127,7 +146,6 @@ form button:hover {
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    display: none;
     transition: all 0.3s;
     display: flex;
     align-items: center;
@@ -158,11 +176,6 @@ form button:hover {
 
 .dark-mode #back-to-top {
     background: #555;
-}
-
-/* 暗黑模式下的切换按钮 */
-.dark-mode .toggle-switch .slider {
-    background: #666;
 }
 
 .footer {
